@@ -20,8 +20,8 @@ async function run() {
                 CREATE TABLE favorites (
                     id SERIAL PRIMARY KEY NOT NULL,
                     name VARCHAR(512) NOT NULL,
-                    lat INTEGER NOT NULL,
-                    lng INTEGER NOT NULL,
+                    lat DECIMAL NOT NULL,
+                    lng DECIMAL NOT NULL,
                     address VARCHAR(512) NOT NULL,
                     owner_id INTEGER NOT NULL REFERENCES users(id)
             );
