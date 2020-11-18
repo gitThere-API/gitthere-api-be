@@ -38,6 +38,7 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
+    "react-xml-parser": "^1.1.8",
     "superagent": "^6.1.0"
   }
 }
