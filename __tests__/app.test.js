@@ -6,6 +6,7 @@ const fakeRequest = require('supertest');
 const app = require('../lib/app');
 const client = require('../lib/client');
 
+// looks great--i love to see so many tested routes!
 describe('app routes', () => {
   describe('routes', () => {
     let token;
@@ -31,7 +32,7 @@ describe('app routes', () => {
       return client.end(done);
     });
 
-    test('adds 2 locations to Jon\'s favorite list POST and GET', async () => {
+    test('adds 2 locations to Jon\'s favorite list POST and GET', async() => {
 
       const expectation = [
         {
@@ -76,7 +77,7 @@ describe('app routes', () => {
       expect(data.body).toEqual(expectation);
     });
 
-    test.skip('deletes 1 location from Jon\'s favorite list DELETE', async () => {
+    test.skip('deletes 1 location from Jon\'s favorite list DELETE', async() => {
 
       const expectation = [
         {
@@ -104,7 +105,7 @@ describe('app routes', () => {
       expect(data.body).toEqual(expectation);
     });
 
-    test('fetch Spin data GET', async () => {
+    test('fetch Spin data GET', async() => {
 
       const expectation = [
         {
@@ -123,7 +124,7 @@ describe('app routes', () => {
       expect(data.body[0]).toEqual(expectation[0]);
     });
 
-    test('fetch lime data GET', async () => {
+    test('fetch lime data GET', async() => {
 
       const expectation = [
         {
@@ -142,7 +143,7 @@ describe('app routes', () => {
       expect(data.body[0]).toEqual(expectation[0]);
     });
 
-    test('fetch nike data GET', async () => {
+    test('fetch nike data GET', async() => {
 
       const expectation = [
         {
@@ -161,7 +162,7 @@ describe('app routes', () => {
       expect(data.body[0]).toEqual(expectation[0]);
     });
 
-    test('fetch trimet data GET', async () => {
+    test('fetch trimet data GET', async() => {
 
       const expectation =
       {
@@ -194,7 +195,7 @@ describe('app routes', () => {
       expect(data.body).toEqual(expectation);
     });
 
-    test('fetch trimet stop data GET', async () => {
+    test('fetch trimet stop data GET', async() => {
 
       const expectation =
       {
